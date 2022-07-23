@@ -1,0 +1,58 @@
+.contact-section
+    background: $green
+    max-width: 1920px 
+    margin: 0 auto
+    color: $gray
+    font-weight: 400
+    font-size: 18px
+    line-height: 21px
+    .contact-section__logo
+        padding: 48px 0 30px 108px
+
+    .contact-section__containers
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+
+        .contact-section__containers-info
+            display: flex
+            flex-direction: column
+            padding: 0 250px 0 108px
+            h2 
+                font-weight: 600
+                font-size: 24px
+                line-height: 28px
+                padding-bottom: 10px
+
+            p
+                padding-bottom: 10px
+
+            p:nth-child(3)
+                padding-bottom: 18px 
+
+            p:last-child
+                padding-bottom: 96px
+        
+        .contact-section__containers-links
+            display: flex
+            flex-direction: column
+            a
+                padding-bottom: 10px
+
+            h3 
+                font-weight: 600
+                padding-bottom: 10px
+
+        
+        .contact-section__containers-follow
+            padding-right: 252px
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-template-rows: 0px
+            gap: 36px 24px // 18px je vertikalni razmak
+            h3
+                font-weight: 600
+                font-size: 18px
+                line-height: 21px
+                color: #000000
+                grid-column: 1/5
+            

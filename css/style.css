@@ -1,12 +1,4 @@
 @import 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
-* {
-  margin: 0;
-  font-family: "Raleway", sans-serif; }
-
-a:hover, a:visited, a:link, a:active {
-  text-decoration: none;
-  color: inherit; }
-
 nav {
   background: #87DE87;
   height: 101px;
@@ -22,7 +14,6 @@ nav {
     position: absolute; }
   nav .navigation--logo_background {
     position: absolute;
-    background: white;
     height: 42px;
     width: 120px;
     margin: 24.5px 0px 34.75px 108px; }
@@ -50,7 +41,7 @@ nav {
       cursor: pointer; }
 
 .banner {
-  background-image: url(../images/introBanner.png);
+  background-image: url(../images/intro-banner.png);
   background-repeat: no-repeat;
   height: 640px;
   object-fit: contain;
@@ -148,10 +139,11 @@ nav {
       background: #87DE87; }
     .energy-section .energy-section__container .energy-section__container-text {
       width: 696px;
-      max-width: 696px;
-      line-height: 21px; }
+      max-width: 696px; }
       .energy-section .energy-section__container .energy-section__container-text p {
-        padding-bottom: 12px; }
+        padding-bottom: 12px;
+        line-height: 21.13px;
+        font-size: 18px; }
       .energy-section .energy-section__container .energy-section__container-text h2 {
         font-size: 36px;
         line-height: 42px;
@@ -242,19 +234,55 @@ nav {
   max-width: 1920px;
   margin: 0 auto;
   color: #333333;
-  font-size: 18px; }
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px; }
+  .contact-section .contact-section__logo {
+    padding: 48px 0 30px 108px; }
   .contact-section .contact-section__containers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
-    .contact-section .contact-section__containers .contact-section__containers-one {
+    .contact-section .contact-section__containers .contact-section__containers-info {
+      display: flex;
+      flex-direction: column;
+      padding: 0 250px 0 108px; }
+      .contact-section .contact-section__containers .contact-section__containers-info h2 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 10px; }
+      .contact-section .contact-section__containers .contact-section__containers-info p {
+        padding-bottom: 10px; }
+      .contact-section .contact-section__containers .contact-section__containers-info p:nth-child(3) {
+        padding-bottom: 18px; }
+      .contact-section .contact-section__containers .contact-section__containers-info p:last-child {
+        padding-bottom: 96px; }
+    .contact-section .contact-section__containers .contact-section__containers-links {
       display: flex;
       flex-direction: column; }
+      .contact-section .contact-section__containers .contact-section__containers-links a {
+        padding-bottom: 10px; }
+      .contact-section .contact-section__containers .contact-section__containers-links h3 {
+        font-weight: 600;
+        padding-bottom: 10px; }
+    .contact-section .contact-section__containers .contact-section__containers-follow {
+      padding-right: 252px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0px;
+      gap: 36px 24px; }
+      .contact-section .contact-section__containers .contact-section__containers-follow h3 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        grid-column: 1/5; }
 
 footer {
   background: #333333;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 13px 0 14px 0; }
+  max-width: 1704px;
+  padding: 13px 108px 14px 108px;
+  margin: 0 auto; }
   footer .footer-text {
     color: #FEFEFE;
     font-weight: 400;
@@ -270,5 +298,13 @@ footer {
     footer .footer-text a:last-child {
       padding-right: 108px;
       padding-left: 36px; }
+
+* {
+  margin: 0;
+  font-family: "Raleway", sans-serif; }
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: inherit; }
 
 /*# sourceMappingURL=style.css.map */

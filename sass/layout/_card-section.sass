@@ -1,0 +1,55 @@
+.card-section
+    padding: 120px 0 120px 0
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 0 24px
+    max-width: 1704px
+    margin: 0 auto 
+    .card-section__title
+        grid-column: 1 / 4
+        color: $gray
+        text-align: center
+        padding-bottom: 86px
+        font-size: 48px
+        line-height: 56px
+
+    .card-section__cards
+        .card-section__cards-container
+            background: $gray
+            font-size: 18px
+            color: $white
+            display: grid
+            grid-template-columns: 1fr 2fr
+            align-items: center
+            padding-right: 34px
+            padding-top: 32px
+
+            .card-section__cards-container__titles
+                font-size: 24px
+                line-height: 28px
+                p
+                    padding-bottom: 5px
+                    padding-left: 24px
+                
+
+            .card-section__cards-container__icon
+                height: 120px
+                width: 120px
+                border-radius: 50%
+                background: $green
+                margin: 0px 0px 17px 32px
+                img
+                    width: 70px
+                    padding-left: 25px
+                    padding-top: 25px
+                
+                .card-section__cards-container__icon-charger
+                    padding-top: 30px
+                    
+            
+            .card-section__cards-container__text
+                grid-column: 1 / 4
+                margin-left: 31.88px
+                padding-bottom: 32px
+                font-weight: 400
+                line-height: 21px
