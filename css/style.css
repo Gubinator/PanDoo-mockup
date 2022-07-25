@@ -7,24 +7,23 @@ nav {
   color: #333333;
   max-width: 1920px;
   margin: 0 auto; }
-  nav .navigation--logo_text {
+  nav .navigation__logo-text {
     font-weight: 600;
     font-size: 32px;
-    margin: 42.25px 0px 34.75px 108.24px;
-    position: absolute; }
-  nav .navigation--logo_background {
     position: absolute;
+    margin: 42.25px 0px 34.75px 108.24px; }
+  nav .navigation__logo-background {
     height: 42px;
     width: 120px;
-    margin: 24.5px 0px 34.75px 108px; }
-  nav .navigation--links {
+    padding: 24.5px 0px 34.75px 108px; }
+  nav .navigation__links {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     column-gap: 24px;
     font-weight: 600; }
-    nav .navigation--links .navigation--links_button {
+    nav .navigation__links .navigation__links-button {
       background: white;
       border: none;
       text-transform: uppercase;
@@ -50,13 +49,13 @@ nav {
   align-items: center;
   max-width: 1920px;
   margin: 0 auto; }
-  .banner .banner--hero {
+  .banner .banner__hero {
     width: 627px;
     max-width: 627px;
     height: 228px;
     background: #87DE87;
     margin-left: 196px; }
-  .banner .banner--hero_textContainer {
+  .banner .hero__textContainer {
     width: 595px;
     max-width: 595px;
     height: 228px;
@@ -64,10 +63,16 @@ nav {
     background: #333333;
     color: white;
     padding-left: 24px;
-    padding-right: 19px; }
-    .banner .banner--hero_textContainer .banner--hero_textContainer_title {
+    padding-right: 19px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px; }
+    .banner .hero__textContainer .hero__textContainer-title {
       padding-top: 32px;
-      padding-bottom: 24px; }
+      padding-bottom: 24px;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 56px; }
 
 .card-section {
   padding: 120px 0 120px 0;
@@ -83,7 +88,7 @@ nav {
     padding-bottom: 86px;
     font-size: 48px;
     line-height: 56px; }
-  .card-section .card-section__cards .card-section__cards-container {
+  .card-section .card-section__cards .card {
     background: #333333;
     font-size: 18px;
     color: #FEFEFE;
@@ -92,25 +97,25 @@ nav {
     align-items: center;
     padding-right: 34px;
     padding-top: 32px; }
-    .card-section .card-section__cards .card-section__cards-container .card-section__cards-container__titles {
+    .card-section .card-section__cards .card .card__titles {
       font-size: 24px;
       line-height: 28px; }
-      .card-section .card-section__cards .card-section__cards-container .card-section__cards-container__titles p {
+      .card-section .card-section__cards .card .card__titles p {
         padding-bottom: 5px;
         padding-left: 24px; }
-    .card-section .card-section__cards .card-section__cards-container .card-section__cards-container__icon {
+    .card-section .card-section__cards .card .card__icon {
       height: 120px;
       width: 120px;
       border-radius: 50%;
       background: #87DE87;
       margin: 0px 0px 17px 32px; }
-      .card-section .card-section__cards .card-section__cards-container .card-section__cards-container__icon img {
+      .card-section .card-section__cards .card .card__icon img {
         width: 70px;
         padding-left: 25px;
         padding-top: 25px; }
-      .card-section .card-section__cards .card-section__cards-container .card-section__cards-container__icon .card-section__cards-container__icon-charger {
+      .card-section .card-section__cards .card .card__icon .card__icon-charger {
         padding-top: 30px; }
-    .card-section .card-section__cards .card-section__cards-container .card-section__cards-container__text {
+    .card-section .card-section__cards .card .card__text {
       grid-column: 1/4;
       margin-left: 31.88px;
       padding-bottom: 32px;
@@ -133,31 +138,30 @@ nav {
     align-items: center;
     gap: 128px 0px;
     padding-bottom: 96px; }
-    .energy-section .energy-section__container .energy-section__container-imageOne {
+    .energy-section .energy-section__container .container__image-one {
       width: 696px;
       height: 480px;
       background: #87DE87; }
-    .energy-section .energy-section__container .energy-section__container-text {
-      width: 696px;
+    .energy-section .energy-section__container .container__text {
       max-width: 696px; }
-      .energy-section .energy-section__container .energy-section__container-text p {
+      .energy-section .energy-section__container .container__text p {
         padding-bottom: 12px;
         line-height: 21.13px;
         font-size: 18px; }
-      .energy-section .energy-section__container .energy-section__container-text h2 {
+      .energy-section .energy-section__container .container__text h2 {
         font-size: 36px;
         line-height: 42px;
         padding-bottom: 12px; }
-    .energy-section .energy-section__container .energy-section__container-text:first-child {
+    .energy-section .energy-section__container .container__text:first-child {
       padding-left: 252px; }
-    .energy-section .energy-section__container #energy-section__container-text2 {
+    .energy-section .energy-section__container #container__text-two {
       padding-right: 252px; }
-    .energy-section .energy-section__container .energy-section__container-imageTwo {
+    .energy-section .energy-section__container .container__image-two {
       width: 696px;
       height: 480px;
       background: #87DE87; }
-      .energy-section .energy-section__container .energy-section__container-imageTwo img {
-        margin-left: 32px; }
+      .energy-section .energy-section__container .container__image-two img {
+        padding-left: 32px; }
     .energy-section .energy-section__container button {
       font-size: 18px;
       line-height: 21px;
