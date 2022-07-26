@@ -23,7 +23,7 @@ nav {
     align-items: center;
     column-gap: 24px;
     font-weight: 600; }
-    nav .navigation__links .navigation__links-button {
+    nav .navigation__links .links__button {
       background: white;
       border: none;
       text-transform: uppercase;
@@ -55,7 +55,7 @@ nav {
     height: 228px;
     background: #87DE87;
     margin-left: 196px; }
-  .banner .hero__textContainer {
+  .banner .hero__container {
     width: 595px;
     max-width: 595px;
     height: 228px;
@@ -67,7 +67,7 @@ nav {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px; }
-    .banner .hero__textContainer .hero__textContainer-title {
+    .banner .hero__container .hero__container-title {
       padding-top: 32px;
       padding-bottom: 24px;
       font-weight: 600;
@@ -126,18 +126,22 @@ nav {
   background: #333333;
   color: #FEFEFE;
   max-width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 96px; }
   .energy-section h1 {
     text-align: center;
+    font-size: 48px;
+    line-height: 56px;
     padding: 64px 0px 117px 0px; }
   .energy-section .energy-section__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    justify-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
     gap: 128px 0px;
-    padding-bottom: 96px; }
+    padding-bottom: 96px;
+    max-width: 1704px;
+    margin: 0 auto; }
     .energy-section .energy-section__container .container__image-one {
       width: 696px;
       height: 480px;
@@ -153,16 +157,19 @@ nav {
         line-height: 42px;
         padding-bottom: 12px; }
     .energy-section .energy-section__container .container__text:first-child {
-      padding-left: 252px; }
+      padding-left: 144px; }
     .energy-section .energy-section__container #container__text-two {
-      padding-right: 252px; }
+      padding-right: 144px; }
     .energy-section .energy-section__container .container__image-two {
       width: 696px;
       height: 480px;
       background: #87DE87; }
       .energy-section .energy-section__container .container__image-two img {
         padding-left: 32px; }
-    .energy-section .energy-section__container button {
+  .energy-section .energy-section__button {
+    display: flex;
+    justify-content: center; }
+    .energy-section .energy-section__button button {
       font-size: 18px;
       line-height: 21px;
       text-align: center;
@@ -171,9 +178,8 @@ nav {
       border: none;
       width: 264px;
       height: 72px;
-      grid-column: 1/3;
       cursor: pointer; }
-      .energy-section .energy-section__container button p {
+      .energy-section .energy-section__button button p {
         font-weight: 700;
         font-size: 18px;
         line-height: 21px;
