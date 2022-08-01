@@ -35,7 +35,6 @@ nav {
       color: #333333;
       margin-right: 6.75rem;
       height: 2.5rem;
-      width: 8rem;
       box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
       cursor: pointer; }
 
@@ -191,9 +190,42 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7.5rem 0 7.5rem 0;
+  justify-content: center;
+  padding: 16.375rem 0 7.5rem 0;
   color: #333333; }
+  .submit-section button {
+    border-radius: 50%;
+    background: #87DE87;
+    border: none;
+    width: 6.25rem;
+    height: 6.25rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25); }
+  .submit-section .glide .carousel__images {
+    overflow: visible;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1.5rem; }
+  .submit-section .glide .carousel__buttons {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 1455px;
+    margin: 0 auto; }
+    .submit-section .glide .carousel__buttons .carousel__buttons-left, .submit-section .glide .carousel__buttons .carousel__buttons-right {
+      width: 100px;
+      height: 100px;
+      background: #87DE87;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none; }
   .submit-section h1 {
+    padding-top: 7.5rem;
     font-weight: 700;
     font-size: 3rem;
     line-height: 3.5rem;
@@ -320,5 +352,8 @@ footer {
 a:hover, a:visited, a:link, a:active {
   text-decoration: none;
   color: inherit; }
+
+ul {
+  list-style-type: none; }
 
 /*# sourceMappingURL=style.css.map */

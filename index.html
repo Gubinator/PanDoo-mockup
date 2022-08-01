@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PanDoo Mockup</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/glide.theme.css">
+    <link rel="stylesheet" href="./css/glide.core.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script defer src="./carousel.js"></script>
+    <script defer src="./script.js"></script>
+
 </head>
 <body>
     
@@ -98,7 +104,25 @@
         <div class="energy-section__button"><button><p>Learn more</p></button></div>
     </div>
 
+
     <div class="submit-section">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="./images/carousel-solar2.jpg" width="552" height="321" alt="Solar panel on house"></li>
+                <li class="glide__slide"><img src="./images/carousel-windmill.jpg" width="552" height="321" alt="Modern windmill"></li>
+                <li class="glide__slide"><img src="./images/carousel-solar.jpg" width="552" height="321" alt="Solar panels in the field"></li>
+                <li class="glide__slide"><img src="./images/carousel-windmill2.jpg" width="552" height="321" alt="Windmill"></li>
+                <li class="glide__slide"><img src="./images/carousel-pinwheel.jpg" width="552" height="321" alt="Pinwheel"></li>
+                
+              </ul>
+              <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./images/arrow-left.svg" alt=""></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./images/arrow-right.svg" alt=""></button>
+              </div>
+            </div>
+        </div>
+        
         <h1>Section  Title</h1>
         <div class="submit-section__text">
             <p>You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.</p>

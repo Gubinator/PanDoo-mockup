@@ -1,10 +1,54 @@
+
+
 .submit-section
     display: flex
     flex-direction: column
-    align-items: center 
-    padding: 7.5rem 0 7.5rem 0
+    align-items: center
+    justify-content: center 
+    padding: 16.375rem 0 7.5rem 0 //262px 0 120px 0
     color: $gray
+
+    button 
+        border-radius: 50%
+        background: $green
+        border: none
+        width: 6.25rem //100px
+        height: 6.25rem
+        cursor: pointer
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25)
+
+    .glide
+
+        .carousel__images
+            overflow: visible
+            display: flex
+            flex-flow: row nowrap
+            justify-content: center
+            gap: 1.5rem //24px
+
+        .carousel__buttons
+            z-index: 2
+            display: flex
+            justify-content: center
+            gap: 1455px
+            margin: 0 auto
+            
+            .carousel__buttons-left, .carousel__buttons-right
+                width: 100px
+                height: 100px
+                background: $green
+                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25)
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                border: none
+    
+                
+
     h1
+        padding-top: 7.5rem
         font-weight: 700
         font-size: 3rem
         line-height: 3.5rem
