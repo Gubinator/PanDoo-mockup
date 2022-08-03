@@ -9,6 +9,9 @@
     @include mobile-device
         padding-bottom: 3rem
         overflow-x: hidden
+    @include tablet-device
+        padding-bottom: 4rem
+        overflow-x: hidden
 
     h1
         text-align: center
@@ -16,6 +19,11 @@
         line-height: 3.5rem
         padding: 4rem 0px 7.313rem 0px
         @include mobile-device
+            padding: 3rem 0 2.375rem 0
+            font-weight: 700
+            font-size: 2.25rem
+            line-height: 2.625rem
+        @include tablet-device
             padding: 3rem 0 2.375rem 0
             font-weight: 700
             font-size: 2.25rem
@@ -37,6 +45,11 @@
             align-items: flex-start
             gap: 1.8125rem 0
             padding-bottom: 0rem
+        @include tablet-device
+            flex-flow: column wrap
+            align-items: flex-start
+            gap: 1.8125rem 0
+            padding-bottom: 0rem
 
     
         .container__image-one
@@ -47,6 +60,17 @@
             img 
                 min-width: 23.4375rem
                 min-height: 22.5rem
+
+                @include tablet-device
+                    order: 0
+                    min-width: 100%
+                    padding-bottom: 10vh
+                    padding-right: 3rem // For image size
+
+            @include tablet-device
+                    order: 0
+                    min-width: 100%
+                    padding-bottom: 15vh
             @include mobile-device
                 order: 0
                 min-width: 23.4375rem
@@ -67,6 +91,8 @@
                 padding-bottom: 0.75rem
                 @include mobile-device
                     text-align: center
+                @include tablet-device
+                    text-align: center
 
         .container__text:first-child
             //112px+32px je udaljenost od blokova
@@ -74,12 +100,19 @@
             @include mobile-device
                 order: 1
                 padding: 0 2rem 0 2rem 
+            @include tablet-device
+                order: 1
+                padding: 0 2rem 0 2rem 
+        
         
         #container__text-two
             padding: 0 9rem 0 0
             @include mobile-device
                 order: 3
                 padding: 0 2rem 0 2rem
+            @include tablet-device
+                order: 3
+                padding: 0 2rem 4rem 2rem
 
         .container__image-two
             width: 43.5rem
@@ -90,11 +123,22 @@
                 @include mobile-device
                     min-width: 23.4375rem
                     padding-left: 0rem
+                
+                @include tablet-device
+                    min-width: 100%
+                    padding-left: 0rem
+                    object-fit: cover
 
             @include mobile-device
                 order: 2
                 min-width: 23.4375rem
                 padding-bottom: 1rem
+                padding-right: 3rem // For image size
+            
+            @include tablet-device
+                order: 2
+                min-width: 100%
+                padding-bottom: 15vh
                 padding-right: 3rem // For image size
                 
 

@@ -1,5 +1,9 @@
 @mixin mobile-device
-  @media (min-width: $mobile-width) and (max-width: $desktop-width) 
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) 
+    @content
+
+@mixin tablet-device
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) 
     @content
 
 @mixin desktop-device

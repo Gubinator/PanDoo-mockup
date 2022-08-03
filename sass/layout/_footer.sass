@@ -7,6 +7,9 @@
     
     @include mobile-device
         padding: 1rem 0 1rem 0
+    
+    @include tablet-device
+        padding: 1rem 0 1rem 0
 
     .footer-text
         color: $white
@@ -24,10 +27,22 @@
             margin: 0 auto
             text-align: center
             column-gap: .75rem
+        @include tablet-device
+            display: grid
+            grid-template-columns: 1fr 1fr
+            row-gap: .75rem
+            margin: 0 auto
+            text-align: center
+            column-gap: .75rem
 
         a:first-child
             padding-left: 6.75rem
             @include mobile-device
+                padding-left: .5rem
+                order: 3
+                grid-column: 1/3
+                justify-self: center
+            @include tablet-device
                 padding-left: .5rem
                 order: 3
                 grid-column: 1/3
@@ -39,11 +54,20 @@
                 margin-left: 0
                 order: 1
                 justify-self: end
+            @include tablet-device
+                margin-left: 0
+                order: 1
+                justify-self: end
         
         a:last-child
             padding-right: 6.75rem
             padding-left: 2rem
             @include mobile-device
+                padding-left: 0
+                padding-right: 0rem
+                order: 2
+                justify-self: start
+            @include tablet-device
                 padding-left: 0
                 padding-right: 0rem
                 order: 2

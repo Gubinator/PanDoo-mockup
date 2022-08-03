@@ -15,6 +15,11 @@
             display: flex
             flex-flow: row wrap
             justify-content: center
+        @include tablet-device
+            padding: 0 0 1.9169rem 0
+            display: flex
+            flex-flow: row wrap
+            justify-content: center
 
     .contact-section__containers
         display: grid
@@ -25,12 +30,19 @@
             flex-flow: column wrap
             align-content: center
             text-align: center
+        @include tablet-device
+            display: flex
+            flex-flow: column wrap
+            align-content: center
+            text-align: center
 
         .contact-section__containers-info
             display: flex
             flex-direction: column
             padding: 0 15.625rem 0 6.75rem
-            @include mobile-device 
+            @include mobile-device
+                padding: 0 0 0 0
+            @include tablet-device
                 padding: 0 0 0 0
 
             h2 
@@ -49,12 +61,16 @@
                 padding-bottom: 6rem
                 @include mobile-device 
                     padding-bottom: 4rem
+                @include tablet-device
+                    padding-bottom: 4rem
         
         .contact-section__containers-links
             display: flex
             flex-direction: column
             @include mobile-device
                 padding-bottom: 3.375rem // 64px je no od a-tagova imaju 10px, 10+54=64px=4rem
+            @include tablet-device
+                padding-bottom: 3.375rem
             a
                 padding-bottom: 0.625rem
             h3 
@@ -69,6 +85,12 @@
             gap: 2rem 1.5rem // 18px je vertikalni razmak
             
             @include mobile-device
+                justify-content: center
+                padding-right: 0
+                a
+                    height: 3rem
+                
+            @include tablet-device
                 justify-content: center
                 padding-right: 0
                 a

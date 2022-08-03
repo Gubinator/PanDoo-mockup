@@ -7,8 +7,11 @@
     color: $gray
     max-width: 1920px
     margin: 0 auto
+    overflow: hidden
     @include mobile-device
         padding: 3rem 0 3rem 0
+    @include tablet-device
+        padding: 5rem 0 5rem 0
 
     button 
         border-radius: 50%
@@ -21,10 +24,20 @@
 
         @include mobile-device
             background: $white
+        
+        @include tablet-device
+            background: $white
 
     .glide
+        .glide__slides
+            height: 19.5rem
+            .glide_slide
+                height: 19.5rem
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
 
-        .glide__slide
             img
                 width: 100%
                 object-fit: cover
@@ -77,12 +90,20 @@
             padding-top: 3rem
             font-size: 2.25rem
             line-height: 2.625rem
+        @include tablet-device
+            padding-top: 3rem
+            font-size: 2.25rem
+            line-height: 2.625rem
     
     p
         font-weight: 500
         font-size: 1.5rem
         line-height: 1.75rem    
         @include mobile-device
+            font-size: 1rem
+            line-height: 1.1875rem
+            padding: 0 2rem 0 2rem
+        @include tablet-device
             font-size: 1rem
             line-height: 1.1875rem
             padding: 0 2rem 0 2rem
@@ -113,6 +134,13 @@
             padding: 0 0rem 0 .5625rem 
             box-shadow: 0px 0px .5rem rgba(0, 0, 0, 0.25)
             border-radius: .75rem
+        
+        @include tablet-device
+            width: 19.5rem
+            height: 3rem
+            padding: 0 0rem 0 .5625rem 
+            box-shadow: 0px 0px .5rem rgba(0, 0, 0, 0.25)
+            border-radius: .75rem
 
         .submit-section__submit-input
             font-style: italic
@@ -123,11 +151,17 @@
             @include mobile-device
                 font-size: 1rem
                 line-height: 1.1875rem
+            @include tablet-device
+                font-size: 1rem
+                line-height: 1.1875rem
         
         input
             outline: none  
             width: 23.75rem
             @include mobile-device
+                width: 9.9375rem
+                padding-right: 2.625rem
+            @include tablet-device
                 width: 9.9375rem
                 padding-right: 2.625rem
 
@@ -147,8 +181,17 @@
                 flex-flow: row wrap
                 justify-content: center
                 align-items: center
+            
+            @include tablet-device
+                border-radius: 0px .75rem .75rem 0px
+                //width: 6.375rem
+                width: 100%
+                height: 105%
+                display: flex
+                flex-flow: row wrap
+                justify-content: center
+                align-items: center
 
-                
             p
                 color: $gray
                 font-weight: 700
