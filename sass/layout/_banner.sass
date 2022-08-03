@@ -2,19 +2,27 @@
     background-image: url(../images/intro-banner.png)
     background-repeat: no-repeat 
     height: 40rem
-    object-fit: contain
     display: flex
-    flex-direction: row
+    flex-flow: row wrap
     align-items: center
     max-width: 120rem
     margin: 0 auto
+
+    @include mobile-device
+        display: none
+
     .banner__hero
         width: 39.188rem
         max-width: 39.188rem
         height: 14.25rem
         background: $green
-        margin-left: 12.25rem 
-        
+        margin-left: 12.25rem
+
+        @include mobile-device
+            margin-left: 0rem
+            padding-bottom: 4rem
+            width: 23.4375rem
+ 
     .hero__container
         width: 37.188rem
         max-width: 37.188rem
@@ -28,9 +36,60 @@
         font-size: 1.125rem
         line-height: 1.313rem
 
+        @include mobile-device
+            height: 14.75rem //236px 
+            width: 19.5rem // 312px=375-32-31
+            max-width: 23.438rem
+            margin-left: 0rem
+            display: flex
+            justify-content: center
+            flex-flow: row wrap
+            padding: 0 1.9375rem 2rem 2rem
+            font-size: 1rem
+
+
         .hero__container-title
             padding-top: 2rem
             padding-bottom: 1.5rem
             font-weight: 600
             font-size: 3rem
             line-height: 3.5rem
+
+            @include mobile-device
+                font-size: 2rem
+                line-height: 2.625rem
+                padding-bottom: 1rem
+    
+.banner-mobile
+    display: flex
+    flex-flow: column wrap
+    align-content: center
+    margin: 0 auto
+
+    @include desktop-device
+        display: none
+        
+    .banner-mobile__container
+        //height: 17.825rem // 49.23px green part + 236px gray container =  285.23px
+        padding-bottom: 3.0769rem
+        //width: 23.4375rem
+        background: $green
+        .container__text
+            background: $gray
+            color: $white
+            display: flex 
+            flex-flow: row wrap
+            justify-content: center
+            padding: 2rem 2rem 0 2rem
+        h1
+            padding-bottom: 1rem
+            font-weight: 600
+            font-size: 2.25rem
+            line-height: 2.625rem
+        p 
+            font-family: 'Raleway'
+            font-style: normal
+            font-weight: 400
+            font-size: 1rem
+            line-height: 1.1875rem
+            padding-bottom: 2rem

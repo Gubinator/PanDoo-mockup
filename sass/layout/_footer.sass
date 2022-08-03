@@ -1,9 +1,13 @@
-footer
+.footer
     background: $gray
     // 1920px - 108px - 108px = 1704px = 106.5rem
     max-width: 106.5rem
     padding: 0.813rem 6.75rem 0.875rem 6.75rem
     margin: 0 auto
+    
+    @include mobile-device
+        padding: 1rem 0 1rem 0
+
     .footer-text
         color: $white
         font-weight: 400
@@ -13,13 +17,35 @@ footer
         flex-direction: row
         align-items: center
 
+        @include mobile-device
+            display: grid
+            grid-template-columns: 1fr 1fr
+            row-gap: .75rem
+            margin: 0 auto
+            text-align: center
+            column-gap: .75rem
+
         a:first-child
             padding-left: 6.75rem
-        
+            @include mobile-device
+                padding-left: .5rem
+                order: 3
+                grid-column: 1/3
+                justify-self: center
+
         a:nth-child(2)
             margin-left: auto
+            @include mobile-device
+                margin-left: 0
+                order: 1
+                justify-self: end
         
         a:last-child
             padding-right: 6.75rem
             padding-left: 2rem
+            @include mobile-device
+                padding-left: 0
+                padding-right: 0rem
+                order: 2
+                justify-self: start
             

@@ -1,8 +1,11 @@
-const config = {
+window.addEventListener('DOMContentLoaded', () => {
+  const config = {
     type: "carousel",
-    perView: 5
+    perView: 3,
+    gap: 24
 }
 
 new Glide(".glide", config).mount();
+  })
 
-  console.log("2")
+

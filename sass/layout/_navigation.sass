@@ -1,4 +1,4 @@
-nav 
+.navigation 
     background: $green
     height: 6.313rem 
     display: grid
@@ -6,6 +6,10 @@ nav
     color: $gray
     max-width: 120rem
     margin: 0 auto
+
+    @include mobile-device
+        height: 4rem //64px
+        min-width: 23.4375rem
 
     .navigation__logo-text
         font-weight: 600
@@ -19,6 +23,10 @@ nav
         width: 7.5rem
         //margin: 24.5px 0px 34.75px 108px // padding: 24.5px 0px 34.75px 108px
         padding: 1.531rem 0px 2.172rem 6.75rem  
+        @include mobile-device
+            padding: 0 8.225rem 0 2rem
+            height: 4rem //64px
+            width: 9.275rem
 
     .navigation__links
         display: flex
@@ -27,6 +35,10 @@ nav
         align-items: center
         column-gap: 1.5rem
         font-weight: 600
+
+        @include mobile-device
+            display: none
+        
         .links__button
             background: white
             border: none
@@ -41,3 +53,22 @@ nav
             height: 2.5rem
             box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25)
             cursor: pointer
+    
+    button
+            padding-left: 0rem
+            padding-right: 2rem
+
+    .navigation__hamburger-button
+        display: flex
+        flex-direction: row-reverse
+        flex-wrap: wrap
+        justify-items: flex-end
+        align-items: center
+        cursor: pointer
+        border: none
+        background: none
+        
+
+        @include desktop-device
+            display: none
+    

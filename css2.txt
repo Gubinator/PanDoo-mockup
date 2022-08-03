@@ -2,29 +2,26 @@
     padding: 7.5rem 0 7.5rem 0
     display: grid
     grid-template-columns: 1fr 1fr 1fr
-    gap: 0rem 1.5rem
+    gap: 5.75rem 0rem
     max-width: 106.5rem
     margin: 0 auto 
     
     @include mobile-device
-        padding: 2.9813rem 0 3.25rem 0
+        padding: 2.9813rem 0 0rem 0
         grid-template-columns: 1fr
         max-width: 19.5rem
-        gap: 5.75rem 0rem
 
         
     .card-section__title
         grid-column: 1 / 4
         color: $gray
         text-align: center
+        padding-bottom: 5.375rem
         font-size: 3rem
         line-height: 3.5rem
-        padding-bottom: 5.375rem
 
         @include mobile-device
             grid-column: 1 / 2
-            padding-bottom: .875rem // 92px gap + 14px (0.875rem) padding = 106px  
-            
 
     .card-section__cards
         .card
@@ -34,54 +31,32 @@
             display: grid
             grid-template-columns: 1fr 2fr
             align-items: center
+            //padding-right: 2.125rem
             padding-top: 2rem
+            margin: 0 auto
 
             @include mobile-device
                 grid-template-columns: 1fr
-                margin: 0 auto
 
             .card__titles
                 font-size: 1.5rem
                 line-height: 1.75rem
-                
-                
-                @include mobile-device
-                    margin: 0 auto
-
+                margin: 0 auto
                 p
                     padding-bottom: 0.313rem
                     padding-left: 1.5rem
-                    font-weight: 600
                     @include mobile-device
                         padding-left: 0rem
-                        font-size: 1.5rem
-                        text-align: center
+                        
                 
-                p:nth-child(2)
-                    font-weight: 600
-                    @include mobile-device
-                        padding: 0rem 0 .625rem 0
+                
 
-                p:nth-child(3)
-                    font-weight: 400
-                    @include mobile-device
-                        padding-bottom: 1.5rem
-                
-                
-            
             .card__icon
                 height: 7.5rem
                 width: 7.5rem
                 border-radius: 50%
                 background: $green  
-                margin: 0px 0px 1.063rem 2rem
-                position: relative
-
-                @include mobile-device
-                    grid-column: 1/4
-                    margin: -5.5rem 0rem 2rem 0rem // 120-32 = 88px = 5.5rem
-                    justify-self: center
-
+                margin: 0 auto
                 img
                     width: 4.375rem
                     padding-left: 1.563rem
@@ -92,21 +67,11 @@
                     
             
             .card__text
-                grid-column: 1 / 4
-                padding-left: 2rem
-                padding-right: 2.125rem
+                grid-column: 1 / 2
+                margin-left: 1.993rem
                 padding-bottom: 2rem
                 font-weight: 400
                 line-height: 1.313rem
-                font-style: normal
-                font-size: 1.125rem
-                margin: 0 auto
                 @include mobile-device
                     padding: 0 1rem 1.5rem 1rem
                     margin-left: 0rem
-                    font-family: 'Raleway'
-                    font-style: normal
-                    font-weight: 400
-                    font-size: 1.125rem
-                    line-height: 1.3125rem
-  

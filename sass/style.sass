@@ -1,12 +1,16 @@
 @import 'typography/typography'
 @import 'themes/themes'
+@import 'abstracts/variables'
+@import 'abstracts/mixins'
 @import 'layout/navigation'
+@import 'layout/_menu'
 @import 'layout/banner'
 @import 'layout/card-section'
 @import 'layout/energy-section'
 @import 'layout/submit-section'
 @import 'layout/contact-section'
 @import 'layout/footer'
+
 
 *
     margin: 0
@@ -19,6 +23,13 @@ a:hover, a:visited, a:link, a:active
 ul 
     list-style-type: none
 
+.display
+    display: flex
+    flex-flow: column wrap
+    align-items: start
+
+.displayOff
+    display: none
 
 
 

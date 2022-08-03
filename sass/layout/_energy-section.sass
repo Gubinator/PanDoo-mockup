@@ -4,11 +4,22 @@
     max-width: 120rem
     margin: 0 auto
     padding-bottom: 6rem
+    
+
+    @include mobile-device
+        padding-bottom: 3rem
+        overflow-x: hidden
+
     h1
         text-align: center
         font-size: 3rem
         line-height: 3.5rem
         padding: 4rem 0px 7.313rem 0px
+        @include mobile-device
+            padding: 3rem 0 2.375rem 0
+            font-weight: 700
+            font-size: 2.25rem
+            line-height: 2.625rem
 
     .energy-section__container
         display: flex
@@ -21,11 +32,27 @@
         max-width: 106.5rem
         margin: 0 auto
 
+        @include mobile-device
+            flex-flow: column wrap
+            align-items: flex-start
+            gap: 1.8125rem 0
+            padding-bottom: 0rem
+
     
         .container__image-one
             width: 43.5rem
             height: 30rem
             background: $green
+
+            img 
+                min-width: 23.4375rem
+                min-height: 22.5rem
+            @include mobile-device
+                order: 0
+                min-width: 23.4375rem
+                min-height: 23.4375rem
+                padding-bottom: 1rem
+                padding-right: 3rem // For image size
 
         .container__text
             max-width: 43.5rem
@@ -38,13 +65,21 @@
                 font-size: 2rem
                 line-height: 2.625rem
                 padding-bottom: 0.75rem
+                @include mobile-device
+                    text-align: center
 
         .container__text:first-child
             //112px+32px je udaljenost od blokova
             padding-left: 9rem
+            @include mobile-device
+                order: 1
+                padding: 0 2rem 0 2rem 
         
         #container__text-two
-            padding-right: 9rem
+            padding: 0 9rem 0 0
+            @include mobile-device
+                order: 3
+                padding: 0 2rem 0 2rem
 
         .container__image-two
             width: 43.5rem
@@ -52,11 +87,25 @@
             background: $green
             img
                 padding-left: 2rem
+                @include mobile-device
+                    min-width: 23.4375rem
+                    padding-left: 0rem
+
+            @include mobile-device
+                order: 2
+                min-width: 23.4375rem
+                padding-bottom: 1rem
+                padding-right: 3rem // For image size
+                
 
 
     .energy-section__button
         display: flex
         justify-content: center
+
+        @include mobile-device
+            display: none
+
         button
             font-size: 1.125rem
             line-height: 1.313rem

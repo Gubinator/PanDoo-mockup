@@ -5,7 +5,7 @@
   .glide * {
     box-sizing: inherit; }
   .glide__track {
-    overflow: hidden; }
+    overflow: visible; }
   .glide__slides {
     position: relative;
     width: 100%;

@@ -15,7 +15,7 @@
 </head>
 <body>
     
-    <nav>
+    <div class="navigation">
         <div class="navigation__logo">
             <!-- <div class="navigation--logo_background"></div>
             <p class="navigation--logo_text">PanDoo</p> -->
@@ -31,7 +31,22 @@
                 Get it now
             </button>
         </div>
-    </nav>
+        <button class="navigation__hamburger-button">
+            <img src="./images/hamburger-button.svg" alt="">
+        </button>
+    </div>
+    
+    <div class="menu">
+        <button class="menu__button-close"><img src="./images/close-button.svg" alt=""></button>
+        <ul class="menu__items">
+            <li class="item">About</li>
+            <li class="item">Pricing</li>
+            <li class="item">Testimonials</li>
+            <li class="item">Blog</li>
+            <li class="item">Contact</li>
+        </ul>
+        <button class="menu__button-get"><img src="./images/get-button.svg" alt=""></button>
+    </div>
 
     <div class="banner">
         <div class="banner__hero">
@@ -41,6 +56,16 @@
             </div>
         </div>
     </div>
+    <div class="banner-mobile">
+        <img src="./images/mobile-banner.png" alt="">  
+        <div class="banner-mobile__container">
+            <div class="container__text">
+                <h1 class="hero__container-title">Hero Title</h1>
+                <p>I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.</p>
+            </div>
+        </div>
+    </div>
+    
 
     <div class="card-section">
         <h1 class="card-section__title">Section Title</h1>
@@ -107,6 +132,7 @@
 
     <div class="submit-section">
         <div class="glide">
+            <h2 class="glide__title">Section title</h2>
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
                 <li class="glide__slide"><img src="./images/carousel-solar2.jpg" width="552" height="321" alt="Solar panel on house"></li>
@@ -166,13 +192,13 @@
         </div>
     </div>
 
-    <footer>
+    <div class="footer">
             <div class="footer-text">
                 <a href="">2020 © PanDoo</a>
                 <a href="">GDPR</a>
                 <a href="">Privacy</a>
             </div>
-    </footer>
+        </div>
 
 </body>
 </html>
