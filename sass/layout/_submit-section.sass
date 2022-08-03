@@ -29,6 +29,7 @@
             background: $white
 
     .glide
+            height: 640px
         .glide__slides
             height: 19.5rem
             .glide_slide
@@ -52,31 +53,10 @@
             @include desktop-device
                 display: none
 
-        .carousel__images
-            overflow: visible
+        .glide__arrows
             display: flex
-            flex-flow: row nowrap
-            justify-content: center
-            gap: 1.5rem //24px
-
-        .carousel__buttons
-            z-index: 2
-            display: flex
-            justify-content: center
-            gap: 1455px
-            margin: 0 auto
-            
-            .carousel__buttons-left, .carousel__buttons-right
-                width: 100px
-                height: 100px
-                background: $green
-                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25)
-                border-radius: 50%
-                display: flex
-                justify-content: center
-                align-items: center
-                cursor: pointer
-                border: none
+            flex-flow: row wrap
+            align-content: center
     
                 
 
