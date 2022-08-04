@@ -416,13 +416,25 @@
           .energy-section .energy-section__container .container__image-one img {
             order: 0;
             min-width: 100%;
-            padding-bottom: 10vh;
+            padding-bottom: 12vh;
             padding-right: 3rem; } }
       @media (min-width: 640px) and (max-width: 1024px) {
         .energy-section .energy-section__container .container__image-one {
           order: 0;
           min-width: 100%;
-          padding-bottom: 15vh; } }
+          padding-bottom: 12vh; } }
+      @media (min-width: 779px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          padding-bottom: 24vh; } }
+      @media (min-width: 850px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          padding-bottom: 32vh; } }
+      @media (min-width: 912px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          padding-bottom: 40vh; } }
+      @media (min-width: 991px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          padding-bottom: 45vh; } }
       @media (min-width: 375px) and (max-width: 640px) {
         .energy-section .energy-section__container .container__image-one {
           order: 0;
@@ -432,6 +444,9 @@
           padding-right: 3rem; } }
     .energy-section .energy-section__container .container__text {
       max-width: 43.5rem; }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__text {
+          margin: 0 auto; } }
       .energy-section .energy-section__container .container__text p {
         padding-bottom: 0.75rem;
         line-height: 1.321rem;
@@ -465,7 +480,8 @@
       @media (min-width: 640px) and (max-width: 1024px) {
         .energy-section .energy-section__container #container__text-two {
           order: 3;
-          padding: 0 2rem 4rem 2rem; } }
+          padding: 0 2rem 4rem 2rem;
+          margin: 0 auto; } }
     .energy-section .energy-section__container .container__image-two {
       width: 43.5rem;
       height: 30rem;
@@ -491,8 +507,21 @@
         .energy-section .energy-section__container .container__image-two {
           order: 2;
           min-width: 100%;
-          padding-bottom: 15vh;
+          padding-bottom: 12vh;
           padding-right: 3rem; } }
+  @media (min-width: 640px) and (max-width: 1024px) and (min-width: 779px) and (max-width: 1024px) {
+    .energy-section .energy-section__container .container__image-two {
+      padding-bottom: 24vh; } }
+  @media (min-width: 640px) and (max-width: 1024px) and (min-width: 850px) and (max-width: 1024px) {
+    .energy-section .energy-section__container .container__image-two {
+      padding-bottom: 32vh; } }
+  @media (min-width: 640px) and (max-width: 1024px) and (min-width: 912px) and (max-width: 1024px) {
+    .energy-section .energy-section__container .container__image-two {
+      padding-bottom: 40vh; } }
+  @media (min-width: 640px) and (max-width: 1024px) and (min-width: 991px) and (max-width: 1024px) {
+    .energy-section .energy-section__container .container__image-two {
+      padding-bottom: 45vh; } }
+
   .energy-section .energy-section__button {
     display: flex;
     justify-content: center; }

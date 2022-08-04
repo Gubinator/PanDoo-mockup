@@ -64,13 +64,22 @@
                 @include tablet-device
                     order: 0
                     min-width: 100%
-                    padding-bottom: 10vh
+                    padding-bottom: 12vh
                     padding-right: 3rem // For image size
 
             @include tablet-device
                     order: 0
                     min-width: 100%
-                    padding-bottom: 15vh
+                    padding-bottom: 12vh
+            @media (min-width: 779px) and ( max-width: 1024px )
+                    padding-bottom: 24vh
+            @media (min-width: 850px) and ( max-width: 1024px )
+                    padding-bottom: 32vh
+            @media (min-width: 912px) and ( max-width: 1024px )
+                    padding-bottom: 40vh
+            @media (min-width: 991px) and ( max-width: 1024px )
+                    padding-bottom: 45vh
+                
             @include mobile-device
                 order: 0
                 min-width: 23.4375rem
@@ -80,10 +89,13 @@
 
         .container__text
             max-width: 43.5rem
+            @include tablet-device
+                margin: 0 auto
             p
                 padding-bottom: 0.75rem
                 line-height: 1.321rem
                 font-size: 1.125rem
+                
             
             h2 
                 font-size: 2rem
@@ -113,6 +125,7 @@
             @include tablet-device
                 order: 3
                 padding: 0 2rem 4rem 2rem
+                margin: 0 auto
 
         .container__image-two
             width: 43.5rem
@@ -138,8 +151,16 @@
             @include tablet-device
                 order: 2
                 min-width: 100%
-                padding-bottom: 15vh
+                padding-bottom: 12vh
                 padding-right: 3rem // For image size
+                @media (min-width: 779px) and ( max-width: 1024px )
+                    padding-bottom: 24vh
+                @media (min-width: 850px) and ( max-width: 1024px )
+                        padding-bottom: 32vh
+                @media (min-width: 912px) and ( max-width: 1024px )
+                        padding-bottom: 40vh
+                @media (min-width: 991px) and ( max-width: 1024px )
+                        padding-bottom: 45vh
                 
 
 
